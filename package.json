@@ -13,5 +13,8 @@
     "lint": "npm run lint --workspace=cmd/rpc/web/explorer",
     "dev:wallet": "npm run dev --workspace=cmd/rpc/web/wallet",
     "build:wallet": "npm run build --workspace=cmd/rpc/web/wallet"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
   }
 }
