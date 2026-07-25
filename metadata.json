@@ -1,0 +1,6 @@
+{
+  "name": "Canopy Explorer & Wallet",
+  "description": "Block explorer and wallet interface for Canopy Network",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

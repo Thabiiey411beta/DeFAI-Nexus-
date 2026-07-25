@@ -1,0 +1,17 @@
+{
+  "name": "canopy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "cmd/rpc/web/explorer",
+    "cmd/rpc/web/wallet"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=cmd/rpc/web/explorer",
+    "build": "npm run build --workspace=cmd/rpc/web/explorer",
+    "lint": "npm run lint --workspace=cmd/rpc/web/explorer",
+    "dev:wallet": "npm run dev --workspace=cmd/rpc/web/wallet",
+    "build:wallet": "npm run build --workspace=cmd/rpc/web/wallet"
+  }
+}
