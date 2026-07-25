@@ -11,7 +11,7 @@
     },
     {
       "source": "/admin-node1/:path*",
-      "destination": "https://node1.canopy.us.nodefleet.net/admin/:path*"
+      "destination": "https://node1.canopy.us.nodefleet.net/rpc/:path*"
     },
     {
       "source": "/rpc-node2/:path*",
@@ -19,7 +19,7 @@
     },
     {
       "source": "/admin-node2/:path*",
-      "destination": "https://node2.canopy.us.nodefleet.net/admin/:path*"
+      "destination": "https://node2.canopy.us.nodefleet.net/rpc/:path*"
     },
     {
       "source": "/(.*)",
@@ -50,6 +50,11 @@
     }
   ],
   "env": {
-    "VITE_NODE_ENV": "production"
+    "VITE_NODE_ENV": "production",
+    "VITE_PUBLIC_RPC_URL": "https://node1.canopy.us.nodefleet.net/rpc",
+    "VITE_RPC_URL": "https://node1.canopy.us.nodefleet.net/rpc",
+    "VITE_PUBLIC_ADMIN_RPC_URL": "https://node1.canopy.us.nodefleet.net/rpc",
+    "VITE_ADMIN_RPC_URL": "https://node1.canopy.us.nodefleet.net/rpc",
+    "VITE_CHAIN_ID": "4294967297"
   }
 }
