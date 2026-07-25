@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "npm run build --workspace=cmd/rpc/web/explorer",
+  "buildCommand": "cd cmd/rpc/web/explorer && npm run build",
   "outputDirectory": "cmd/rpc/web/explorer/dist",
-  "installCommand": "npm install",
+  "installCommand": "cd cmd/rpc/web/explorer && npm install",
   "framework": "vite",
   "rewrites": [
     {
